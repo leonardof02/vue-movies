@@ -46,12 +46,12 @@ function search() {
     padding: 10px;
     font-size: 20px;
     border-radius: 20px;
-    background-color: #3d51ff;
-    color: #ccc;
+    background-color: #3dff7e;
+    color: #222;
 }
 
 .search-container button:hover {
-    box-shadow: 0px 0px 6px 3px #0051ff;
+    box-shadow: 0px 0px 6px 3px #00ff0d93;
     scale: 1.02;
 }
 

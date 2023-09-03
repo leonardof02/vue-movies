@@ -66,12 +66,12 @@ async function sumbitSearch( search: string ) {
 
 ul h2 {
     font-size: 30px;
-    color: rgb(80, 80, 255);
+    color: #5fff50;
 }
 
 .app-name {
-    font-size: 40px;
-    background-image: linear-gradient(to right,#313eff, #8b32ff);
+    font-size: 60px;
+    background-image: linear-gradient(to right,#31ff6f, #61b1f3);
     font-weight: bolder;
     background-clip: text;
     color: transparent;
