@@ -1,5 +1,5 @@
 const API_KEY = "596ba8d3";
-const BASE_URL = `http://www.omdbapi.com/?apikey=${API_KEY}`;
+const BASE_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
 
 export async function getMovieByTitle(title: string) {
     try {
