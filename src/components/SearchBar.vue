@@ -14,26 +14,41 @@ function search() {
 <template>
     <div class="full center margin main-container">
         <div class="search-container">
-            <input v-model="movieTitle" type="text" placeholder="Type a Movie Title" />
+            <input v-model="movieTitle" type="text" placeholder="Type a Movie Title" @keyup.enter="search"/>
             <button class="search-button" @click="search">Search Movie</button>
         </div>
     </div>
 </template>
 
 <style>
-.main-container {
-    margin: 10px;
-    margin-top: 40px;
-}
 
 .search-container {
     max-width: 800px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    @media screen and (max-width: 400px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: none;
+    }
     padding: 10px 20px;
     border-radius: 18px;
+    align-items: center;
     border: 1px solid #666;
     gap: 15px;
+}
+
+.search-container input {
+    flex-grow: 1;
+    background: transparent;
+    font-size: 30px;
+    min-width: 0;
+    color: #ccc;
+    outline: none;
+    @media screen and (max-width: 400px) {
+        width: 100%;
+    }
 }
 
 .search-container:hover {
@@ -59,11 +74,4 @@ function search() {
     scale: 0.95;
 }
 
-.search-container input {
-    flex-grow: 1;
-    background: transparent;
-    font-size: 30px;
-    color: #ccc;
-    outline: none;
-}
 </style>
